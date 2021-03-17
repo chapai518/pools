@@ -7,7 +7,7 @@ spec:
     matchExpressions:
       - key: machineconfiguration.openshift.io/role
         operator: In
-        values: CHANGE_ME
+        values: [worker,infra]
   nodeSelector:
     matchLabels:
-      CHANGE_ME
+      node-role.kubernetes.io/infra: ""
